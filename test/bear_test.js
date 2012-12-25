@@ -18,18 +18,18 @@
     test.ifError(value)
 */
 
-// get and fire up gdt on port 8000
-var gdt = require('../lib/gdt.js').create( 8000 );
+// get and fire up bear on port 8000
+var bear = require('../lib/bear.js').create( 8000 );
 var dexec = require( 'deferred-exec' );
 var dfs = require( '../lib/deferred-fs.js' );
 
 var site = JSON.parse('{"repo":"danheberden/payloads","git":"test/gits/original-copy/","deploy":"test/site/deploy/","live":"test/site/live/","liveBranch":"master","deployOnTag":"true"}');
 
 // make a new site
-var testSite = gdt( site );
+var testSite = bear( site );
 
 // sanity:
-gdt.verbose( false );
+bear.verbose( false );
 
 var siteVerifiers = {
   live: function( test, deployedVersion, dontEndTest ) {
@@ -80,7 +80,7 @@ setTimeout( function() {
   process.exit(127);
 }, 10000 );
 
-exports['gdt update stage and master'] = {
+exports['bear update stage and master'] = {
   setUp: function(done) {
     // clean up our testing area
     var commands = [ 

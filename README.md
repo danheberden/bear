@@ -1,6 +1,6 @@
-# gdt
+# bear
 
-a <b>G</b>it based <b>D</b>eployment <b>T</b>ool
+a git based deployment tool
 
 ## what does it do?
 

@@ -1,8 +1,8 @@
 {
-  "name": "gdt",
-  "description": "a Git based Deployment Tool",
+  "name": "bear",
+  "description": "a git based deployment tool",
   "version": "0.1.0",
-  "homepage": "https://github.com/danheberden/gdt",
+  "homepage": "https://github.com/danheberden/bear",
   "author": {
     "name": "Dan Heberden",
     "email": "danheberden@gmail.com",
@@ -10,18 +10,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/danheberden/gdt.git"
+    "url": "git://github.com/danheberden/bear.git"
   },
   "bugs": {
-    "url": "https://github.com/danheberden/gdt/issues"
+    "url": "https://github.com/danheberden/bear/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/danheberden/gdt/blob/master/LICENSE-MIT"
+      "url": "https://github.com/danheberden/bear/blob/master/LICENSE-MIT"
     }
   ],
-  "main": "lib/gdt",
+  "main": "lib/bear",
   "engines": {
     "node": ">= 0.8.0"
   },
