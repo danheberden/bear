@@ -144,6 +144,14 @@ exports['bear update stage and master'] = {
     testSite.start().then( function( g ) {
       testSite.gith.payload( json );
     });
+  },
+  'test file loading of settings' : function( test ) {
+    test.expect(1);
+    var otherSite = bear( 'test/site.json' );
+    otherSite.ready.done( function() {
+      test.equal( otherSite.attr('live'), 'test/site/live/', 'settings from json file should match initialized object' );
+      test.done();
+    });
   }
 
 };
