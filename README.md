@@ -1,3 +1,7 @@
+# Unavailable / Discontinued
+
+This package will no longer be developed against or available on npm. 
+
 # bear
 
 a git based deployment tool
